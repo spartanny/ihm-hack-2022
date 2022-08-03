@@ -23,14 +23,17 @@ const Card: FC<Props> = (props: Props) => {
     Object.entries(product).map((key, value) => {
       console.log(key, value)
       return (
-        <p className="text-lg">
-          {key[0]} : {key[1]}
-        </p>
+        <div className="m-[2px] grid grid-cols-2 shadow-md">
+          <span className="p-3 capitalize bg-[#eaeded] flex justify-center">
+            {key[0]}
+          </span>
+          <span className="p-3 flex justify-center">{key[1]}</span>
+        </div>
       )
     })
   return (
-    <div className="card bg-sky-200 text-black p-4 m-2 shadow-md hover:shadow-xl w-auto md:w-[500px]">
-      <h1 className="text-2xl ">Hello this is the card componenet!</h1>
+    <div className="card bg-white text-black p-4 m-2 shadow-md hover:shadow-xl w-auto md:w-full">
+      <h1 className="text-2xl ">Product Image!</h1>
       {render}
       {ProductComponent}
       <button className="btn mt-4 rounded-full bg-orange-300">

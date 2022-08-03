@@ -3,18 +3,18 @@ import CustomerReview from '../components/CustomerReview'
 import FaqComponent from '../components/FaqComponent'
 import ProductComponent from '../components/ProoductComponent/ProductComponent'
 import {
-  FAQDataProduct1,
+  FAQDataProduct3,
   overallReviews,
   ProductData,
 } from '../data/ProductData'
 
 const LandingPage: FC = () => {
-  const product = ProductData[0]
-  const faq = FAQDataProduct1
+  const product = ProductData[2]
+  const faq = FAQDataProduct3
   const renderFAQ = faq.map((item) => {
     return <FaqComponent faq={item} />
   })
-  const overallReview = overallReviews[0]
+  const overallReview = overallReviews[2]
 
   return (
     <div>

@@ -6,6 +6,8 @@ import App from './App'
 import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import LandingPage from './views/LandingPage'
+import LandingPage1 from './views/LandingPage1'
+import LandingPage2 from './views/LandingPage2'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -13,7 +15,9 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/asin" element={<LandingPage />} />
+          <Route path="/asin1" element={<LandingPage />} />
+          <Route path="/asin2" element={<LandingPage1 />} />
+          <Route path="/asin3" element={<LandingPage2 />} />
         </Routes>
       </BrowserRouter>
     </Provider>
