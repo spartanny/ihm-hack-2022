@@ -1,5 +1,5 @@
 // This is for individual reviews
-export interface customerReviews {
+export interface CustomerReviews {
   ratingGiven: number
   reviewTitle: string
   reviewText: string
@@ -9,7 +9,7 @@ export interface customerReviews {
 }
 
 // This is for overall rating
-export interface overallReviews {
+export interface OverallReviews {
   overallRating: number
   totalReviews: number
   fiveStarCount: number

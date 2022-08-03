@@ -1,4 +1,4 @@
-export interface productDescription {
+export interface Product {
   name: string
   asin: string
   cutomerReviews: string
