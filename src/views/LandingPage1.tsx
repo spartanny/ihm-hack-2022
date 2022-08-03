@@ -6,7 +6,7 @@ import ProductComponent from '../components/Prooduct/Product'
 import { ProductData } from '../data/ProductData'
 
 const LandingPage: FC = () => {
-  const product = ProductData[0]
+  const product = ProductData[1]
   // Information page
   // qna comp
   // review component

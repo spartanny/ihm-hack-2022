@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import Card from '../Card'
 import { Product } from '../../types'
+import { ProductData } from '../../data/ProductData'
 
 interface Props {
   asin?: string
@@ -9,11 +10,7 @@ interface Props {
 
 const ProductComponent: FC<Props> = (props: Props) => {
   const { asin } = props
-  const obj = {
-    name: 'Wine',
-    asin: '123123',
-    launchDate: 'Today',
-  } as Product
+  const obj = ProductData[0]
   return (
     <div>
       <Card product={obj} />
