@@ -1,0 +1,14 @@
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+
+# Ignore in the root directory:
+/*.json
+/*.yaml
+/*.yml
+/*.ts
+
+# Ignore artifacts:
+build
+coverage
