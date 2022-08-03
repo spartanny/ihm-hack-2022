@@ -1,7 +1,5 @@
 import { FC } from 'react'
-import Card from '../Card'
 import { Product } from '../../types'
-import { ProductData } from '../../data/ProductData'
 
 interface Props {
   product: Product
@@ -24,7 +22,7 @@ const ProductComponent: FC<Props> = (props: Props) => {
     <div className="card bg-white text-black p-4 m-2 shadow-md hover:shadow-xl w-auto md:w-full">
       <h1 className="text-2xl ">Product Image!</h1>
       {renderProduct}
-      <button className="btn mt-4 rounded-full bg-orange-300">
+      <button className="btn mt-4 rounded-full bg-[#FF9900]">
         Speak it up !
       </button>
     </div>
