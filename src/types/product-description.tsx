@@ -1,7 +1,7 @@
 export interface Product {
   name: string
   asin: string
-  cutomerReviews: string
+  cutomerReviews: number
   bestSellerRank: number
   launchDate: string
   manufacturer: string

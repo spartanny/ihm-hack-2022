@@ -12,11 +12,11 @@ export interface CustomerReviews {
 export interface OverallReviews {
   overallRating: number
   totalReviews: number
-  fiveStarCount: number
-  fourStartCount: number
-  threeStarCount: number
-  twoStartCount: number
-  oneStarCount: number
+  fiveStarCount: string
+  fourStartCount: string
+  threeStarCount: string
+  twoStartCount: string
+  oneStarCount: string
   valueForMoney: number
   easyToUse: number
 }
