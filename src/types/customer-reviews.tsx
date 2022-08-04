@@ -13,9 +13,9 @@ export interface OverallReviews {
   overallRating: number
   totalReviews: number
   fiveStarCount: string
-  fourStartCount: string
+  fourStarCount: string
   threeStarCount: string
-  twoStartCount: string
+  twoStarCount: string
   oneStarCount: string
   valueForMoney: number
   easyToUse: number
