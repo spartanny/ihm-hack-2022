@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import CustomerReview from '../components/CustomerReview'
 import FaqComponent from '../components/FaqComponent'
+import Header from '../components/Header'
 import ProductComponent from '../components/ProoductComponent/ProductComponent'
 import {
   FAQDataProduct3,
@@ -18,6 +19,7 @@ const LandingPage: FC = () => {
 
   return (
     <div>
+      <Header />
       <ProductComponent product={product} />
       <h1 className="text-2xl text-black">Frequently Asked Questions</h1>
       {renderFAQ}
