@@ -16,14 +16,14 @@ const LandingPage: FC = () => {
     return <FaqComponent faq={item} />
   })
   const overallReview = overallReviews[2]
-
+  const HeadingCss = 'text-2xl text-black text-center'
   return (
     <div>
       <Header />
       <ProductComponent product={product} />
-      <h1 className="text-2xl text-black">Frequently Asked Questions</h1>
+      <h1 className={HeadingCss}>Frequently Asked Questions</h1>
       {renderFAQ}
-      <h1 className="text-2xl text-black">Customer Reviews</h1>
+      <h1 className={HeadingCss}>Customer Reviews</h1>
       <CustomerReview review={overallReview} />
     </div>
   )
