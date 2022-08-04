@@ -9,7 +9,7 @@ const CustomerReview: FC<Props> = (props: Props) => {
   const { review } = props
   const renderReview = Object.entries(review).map((key, value) => {
     return (
-      <div className="m-[2px] grid grid-cols-2 shadow-md">
+      <div className="m-[2px] grid grid-cols-2 shadow-md" key={key[0]}>
         <span className="p-3 capitalize bg-[#eaeded] flex justify-center">
           {key[0]}
         </span>
